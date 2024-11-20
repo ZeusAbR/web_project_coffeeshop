@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 30px 0 40px 0;
 }
 
 .nav {
@@ -32,11 +33,13 @@
 .nav__logo {
   width: 105px;
   height: 39px;
-  margin-top: 30px;
   margin-left: 30px;
 }
 
 .nav__links {
+  display: flex;
+  list-style-type: none;
+
   /* flata la propiedad de alineacion respectiva a flex*/
   margin-top: 30px;
   margin-right: 80px;
@@ -50,10 +53,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
 }
 .header__image {
   background-size: cover;
-  /*centrarla , me parece que la jerarquia o los paddings esta aplicando en un modo que no decifro */
 }
 .header__content {
   position: absolute;
@@ -70,7 +73,8 @@
   line-height: 72px;
   letter-spacing: -1px;
   max-width: 709px;
-  margin-top: 200px;
+  margin: 0 0 0 80px;
+  margin-top: 183px;
 }
 
 .header__span-accent {
@@ -89,7 +93,7 @@
   font-size: 20px;
   line-height: 30px;
   max-width: 683px;
-  margin-top: ;
+  margin: 28px 0 0 80px;
 }
 
 .header__image-coffee {
@@ -101,9 +105,10 @@
 }
 
 .header__footer {
-  margin-top: auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin: auto 80px 0 0;
 }
 .header__paragraph {
   font-family: "inter";
@@ -112,6 +117,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+  margin: 0 0 0 80px;
 }
 
 .content {
@@ -127,6 +133,7 @@
   background-size: cover;
   background-position: center;
   padding-top: 100px;
+  padding-left: 80px;
   padding-bottom: 215px;
 }
 
@@ -138,6 +145,7 @@
   font-size: 44px;
   line-height: 52px;
   margin-left: 80px;
+  margin: 0 0 24px 0; /*al ser h2 se pone el margin 0*/
 }
 
 .recipes__subtitle {
@@ -149,11 +157,12 @@
   line-height: 30px;
   margin-top: 24px;
   margin-left: 80px;
+  margin: 0; /*al ser h2 se pone el margin 0*/
 }
 
 .recipes__videos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /*tengo duda de que propiedad es la correcta , esto determina que se centre el elemento*/
   gap: 40px;
   margin-top: 80px;
 }
@@ -172,4 +181,5 @@
   line-height: 30px;
   display: flex;
   justify-content: space-between;
+  margin: 21px 0 0 0; /*al ser h2 se pone el margin 0*/
 }
